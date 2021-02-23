@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estimate Quation</title>
+</head>
+
+<body>
+    <table
+        style="max-width:670px;margin:50px auto 10px;background-color:#fff;padding:50px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);-moz-box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24); border-top: solid 10px green;">
+        <thead>
+            <tr>
+                <th style="text-align:left;">&lt;&lt;cname&gt;&gt;</th>
+                <th style="text-align: right;">Invoice Date:&nbsp;&lt;&lt;date&gt;&gt;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="height:35px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border: solid 1px #ddd; padding:10px 20px;">
+                    <p style="font-size:14px;margin:0 0 6px 0;"><span
+                            style="font-weight:bold;display:inline-block;min-width:150px">&nbsp; &nbsp; &nbsp;Payment
+                            status&nbsp;</span><b style="color:green;font-weight:normal;margin:0">Success</b></p>
+                    <p style="font-size:14px;margin:0 0 6px 0;"><span
+                            style="font-weight:bold;display:inline-block;min-width:146px">Transaction
+                            ID</span>&lt;&lt;tid&gt;&gt;</p>
+                    <p style="font-size:14px;margin:0 0 0 0;"><span
+                            style="font-weight:bold;display:inline-block;min-width:146px">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;Order amount</span>&nbsp; &nbsp;
+
+                        ₹
+
+                        &lt;&lt;tbill&gt;&gt;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:35px;"><br><b>
+                        <font size="4">CUSTOMER</font>
+                    </b></td>
+            </tr>
+            <tr>
+                <td style="width:50%;padding:20px;vertical-align:top">
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px">Name</span> &lt;&lt;name&gt;&gt;</p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;">Email</span> &lt;&lt;email&gt;&gt;
+                    </p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;">Phone</span> &lt;&lt;phone&gt;&gt;
+                    </p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;"><br></span></p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><br></p>
+                </td>
+                <td style="width:50%;padding:20px;vertical-align:top">
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;">Driver Name:</span>
+                        &lt;&lt;dname&gt;&gt;</p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;">Vehicle Mode</span>
+                        &lt;&lt;vmode&gt;&gt;</p>
+                    <p style="margin:0 0 10px 0;padding:0;font-size:14px;"><span
+                            style="display:block;font-weight:bold;font-size:13px;">Trip Duration</span>
+                        &lt;&lt;fdate&gt;&gt; to &lt;&lt;edate&gt;&gt;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:inline-block;padding:10px 0 0 14px"
+                    align="left" valign="top"> &nbsp;<table
+                        style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;width:auto;padding:0">
+                        <tbody>
+                            <tr style="vertical-align:top;text-align:left;width:100%;padding-top:5px" align="left">
+                                <td style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:table-cell;width:80px!important;line-height:16px;height:auto;padding:0 0 0 0"
+                                    align="left" valign="top"><span
+                                        style="font-size:14px;font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;font-weight:normal;color:#000000!important"><span>Pick-up</span></span>
+                                </td>
+                                <td rowspan="2"
+                                    style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:table-cell;width:17px!important;padding:3px 2px 10px 2px"
+                                    align="left" valign="top"> <img width="6" height="126"
+                                        src="https://ci4.googleusercontent.com/proxy/-4JN05r1BHpJig7fZ3_u5exztTTZiUqZw80LlR1doUR3spXgpWjsSPn6iSq3MxLogXle5FcNORTYc0vdmpQnvuduxWgcHQa9=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_src_dest"
+                                        style="outline: none; text-decoration: none; float: left; clear: both; display: block; padding-top: 5px; margin-right: 0px;"
+                                        align="left" class="CToWUd"> </td>
+                                <td style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:table-cell;width:197px;line-height:16px;height:57px;padding:0 10px 10px 0"
+                                    align="left" valign="top"> <span
+                                        style="font-size:14px;font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000!important;line-height:16px;text-decoration:none">
+                                        &lt;&lt;padd&gt;&gt;<br><br><br><br><br><br></span></td>
+                            </tr>
+                            <tr style="vertical-align:top;text-align:left;width:100%;padding:0" align="left">
+                                <td style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:table-cell;width:80px!important;line-height:16px;height:auto;padding:0 0 0 0"
+                                    align="left" valign="top"><span
+                                        style="font-size:14px;font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;font-weight:normal;color:#000000!important"><span><a
+                                                style="text-decoration:none!important;color:#000000!important"><br>&nbsp;
+                                                &nbsp; Drop</a></span></span></td>
+                                <td style="word-break:break-word;border-collapse:collapse!important;vertical-align:top;text-align:left;display:table-cell;width:197px;line-height:16px;height:auto;padding:0 0px 0 0"
+                                    align="left" valign="top">
+                                    <span
+                                        style="font-size:14px;font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000!important;line-height:16px;text-decoration:none"><br>&nbsp;&lt;&lt;dadd&gt;&gt;</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td colspan="2" style="font-size:20px;padding:30px 15px 0 15px;"><span
+                        style="color: rgb(0, 0, 0); font-family: Helvetica, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; word-spacing: -0.3px;">Thanks
+                        for travelling with us</span><br><img data-surl="cid:ii_kl7ppgsn1"
+                        src="https://thereciprocalsolutions.com/img/core-img/logotrs.ico"
+                        alt="photo_2021-01-28_14-07-30.jpg" width="80" height="80"
+                        style="margin-right: 0px;"><br>&lt;&lt;cname&gt;&gt;<br><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: left; padding: 15px;"><br><br>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td align="center"
+                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#333333;font-size:16px;padding-bottom:16px;font-weight:bold;border-bottom:1px solid #d7d7d7">
+                    &nbsp; Bill Details</td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-top:6px;padding-bottom:6px;padding-left:7px;padding-right:13px;background-color:#f3f3f3">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000;font-size:14px;font-weight:normal;line-height:18px">
+                                                                                    Ride Fare </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000;font-size:14px;font-weight:normal;line-height:18px">
+
+                                                                                    ₹
+
+                                                                                    &lt;&lt;rf&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-right:13px;padding-top:3px;padding-bottom:3px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+                                                                                    Special Discount </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+
+                                                                                    ₹
+
+                                                                                    &lt;&lt;sd&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px">
+                                    <img style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-right:13px;padding-top:3px;padding-bottom:3px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+                                                                                    Driver Bata * </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+
+                                                                                    ₹
+
+                                                                                    &lt;&lt;db&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-right:13px;padding-top:3px;padding-bottom:3px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+                                                                                    Toll Charge</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+
+                                                                                    ₹
+
+                                                                                    &lt;&lt;tc&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-right:13px;padding-bottom:2px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+                                                                                    Wait time charge </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:14px;font-weight:normal;line-height:18px">
+
+                                                                                    ₹&lt;&lt;wtc&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-top:6px;padding-bottom:6px;padding-left:7px;padding-right:13px;background-color:#f3f3f3">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="72%" style="width:72%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000;font-size:16px;font-weight:bold;line-height:18px">
+                                                                                    Total Bill <span
+                                                                                        style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:13px;font-weight:normal">(rounded
+                                                                                        off)</span> <span
+                                                                                        style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#707070;font-size:13px">
+                                                                                        <br> Includes ₹ Taxes </span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="27%" style="width:27%"
+                                        align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#000000;font-size:16px;font-weight:bold;line-height:18px">
+                                                                                    &lt;&lt;tbill&gt;&gt;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        style="width:100%"
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-top:5px;padding-right:13px;padding-bottom:0px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:13px;line-height:18px">
+                                                                                    *Access Fee is charged for availing
+                                                                                    the &lt;&lt;cname&gt;&gt; platform
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-top:5px;padding-right:13px;padding-bottom:0px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left"
+                                                                                    style="font-family:Helvetica,'Helvetica Neue',Arial,sans-serif;color:#707070;font-size:13px;line-height:18px">
+                                                                                    Total Fare may change when you
+                                                                                    change the route or if the ride time
+                                                                                    exceeds the initial estimate. </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td border="0" cellpadding="0" cellspacing="0" valign="top"
+                                    style="padding-left:7px;padding-top:10px;padding-right:13px;padding-bottom:18px">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%"
+                                        align="left">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:0 0 0 0">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left"><br> </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#ffffff;line-height:8px!important;padding:0 0 0 0;font-size:13px"> <img
+                                        src="https://ci5.googleusercontent.com/proxy/lmwK56OC4yjGRVeNTPP_27AftdUtV-9dvZAC5i9QusYZiMsgXSmlD9M63EWix3anmcSB5m4gFvgXiZ5rjjz7iInMK33HurJCrBg=s0-d-e1-ft#http://d2xfkvgwru9u2c.cloudfront.net/Invoice_White_line"
+                                        style="width:100%" class="CToWUd"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="2" style="padding: 50px 15px 0px;">
+                    <strong
+                        style="font-size: 14px; text-align: left; display: block; margin: 0px 0px 10px;">Regards</strong>
+                    <div style="font-size: 14px; text-align: left;">&lt;&lt;cname&gt;&gt;</div>
+                    <div style="text-align: left;"><span style="font-size: 14px;"><br></span></div>
+                    <b style="font-size: 14px;">
+                        <div style="text-align: left;"><b>Phone:</b><span style="font-weight: normal;">
+                                &lt;&lt;cphone&gt;&gt;</span></div>
+                    </b>
+                    <div style="text-align: left;"><b style="font-size: 14px;">Email:</b><span style="font-size: 14px;">
+                            &lt;&lt;cemail&gt;&gt;</span></div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    </div>
+    </div>
+    </td>
+    <td class="Aq">&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+
+</body>
+
+</html>

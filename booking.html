@@ -181,16 +181,14 @@ input[type=submit] {
 		<div class="container">
 			<div class="row">
 				
-
 				<div class="col-sm-9 col-md-9">
 					<div class="content">
-					<div class="alert">Your message has been sent</div>
 						<h2 class="section-heading center">
-							Taxi Booking
+							ONLINE CAB BOOKING
 						</h2>
 						<p class="section-heading-3">Have a smooth and safe ride with our healthy and expert drivers. Book the Cab right now!</p>
 						<div class="margin-bottom-30"></div>
-					
+						<div class="alert">Your message has been sent</div>
 						<form action="#" class="form-contact" id="bookingForm" data-toggle="validator" novalidate="true">
 							<div class="form-group">
 								<input type="text" class="form-control" id="name" placeholder="Name" required="">
@@ -217,17 +215,22 @@ input[type=submit] {
 								<div class="help-block with-errors"></div>
 							</div>
 							<div class="form-group">
+								<input type="time" class="form-control" id="time"  required="">
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group">
 								<select class="form-control" id="ser">
-								  	<option value="One Way Taxi">One Way Taxi</option>
+									<option value="One Way Taxi">Choose your way</option>
+								  	<option value="One Way Taxi">One Way Drop</option>
 									<option value="Round Trip Cab">Round Trip Cab</option>
 									<option value="Tours & Travels">Tours & Travels</option>
 								</select>
 							</div>
 							<div class="form-group">
 								<select class="form-control" id="cars">
+									<option value="Sedan">Select Your Car Type</option>
 									<option value="Sedan">Sedan</option>
 									<option value="SUV">SUV</option>
-									<option value="Traveller">Traveller</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -235,8 +238,7 @@ input[type=submit] {
 								<button  type="submit" onclick="testVariable()" class="btn btn-primary">Find Car</button>
 							</div>
 						</form>
-						<div class="margin-bottom-50"></div>
-					 </div>
+					
 				</div>
 
 			</div>

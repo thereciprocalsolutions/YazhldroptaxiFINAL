@@ -736,7 +736,9 @@ let defaultSpeed = 3000;
 			<div class="col-sm-3 col-md-3">
 				<div class="counter-1">
 					<div class="counter-number">
-					  500+
+					   <div class="counter-container">
+					      <div class="counter" data-target="500">+
+					    </div>
 					</div>
 					<div class="counter-title">Qualified &amp; <br>Drivers</div>
 				  </div>
@@ -744,7 +746,9 @@ let defaultSpeed = 3000;
 			<div class="col-sm-3 col-md-3">
 				<div class="counter-1">
 					<div class="counter-number">
-					  1000+
+					    <div class="counter-container">
+					      <div class="counter" data-target="1000">+
+					    </div>
 					</div>
 					<div class="counter-title">Satisfied<br>Customers</div>
 				  </div>
@@ -752,7 +756,9 @@ let defaultSpeed = 3000;
 			<div class="col-sm-3 col-md-3">
 				<div class="counter-1">
 					<div class="counter-number">
-					  3000+
+					   <div class="counter-container">
+					      <div class="counter" data-target="3000">+
+					    </div>
 					</div>
 					<div class="counter-title">Successful &amp; <br>Rides</div>
 				  </div>
@@ -2497,7 +2503,23 @@ let defaultSpeed = 3000;
 	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5'></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
+<script>
+	const counters = document.querySelectorAll(".counter");
 
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+		</script>
 		
 </body>
 </html>

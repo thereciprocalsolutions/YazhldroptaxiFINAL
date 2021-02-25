@@ -728,7 +728,7 @@ let defaultSpeed = 3000;
 <div id="counters">
 
 					<div class="counter-number">
-					  100+
+					  <span id="count1"></span>+
 					</div>
 					<div class="counter-title">Cities<br> in South India </div>
 				  </div></div>
@@ -737,7 +737,7 @@ let defaultSpeed = 3000;
 				<div class="counter-1">
 					<div class="counter-number">
 					
-					      500+
+					     <span id="count2"></span>+
 					 
 					</div>
 					<div class="counter-title">Qualified &amp; <br>Drivers</div>
@@ -747,7 +747,7 @@ let defaultSpeed = 3000;
 				<div class="counter-1">
 					<div class="counter-number">
 					 
-					      1000+
+					      <span id="count3"></span>+
 					   
 					</div>
 					<div class="counter-title">Satisfied<br>Customers</div>
@@ -756,7 +756,7 @@ let defaultSpeed = 3000;
 			<div class="col-sm-3 col-md-3">
 				<div class="counter-1">
 					<div class="counter-number">
-					   3000+
+					   <span id="count4"></span>+
 					</div>
 					<div class="counter-title">Successful &amp; <br>Rides</div>
 				  </div>
@@ -2501,22 +2501,28 @@ let defaultSpeed = 3000;
 	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5'></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
-<script>
-	const counters = document.querySelectorAll(".counter");
-
-counters.forEach((counter) => {
-  counter.innerText = "0";
-  const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const increment = target / 200;
-    if (count < target) {
-      counter.innerText = `${Math.ceil(count + increment)}`;
-      setTimeout(updateCounter, 1);
-    } else counter.innerText = target;
-  };
-  updateCounter();
-});
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+		 function counter(id, start, end, duration) {
+		  let obj = document.getElementById(id),
+		   current = start,
+		   range = end - start,
+		   increment = end > start ? 1 : -1,
+		   step = Math.abs(Math.floor(duration / range)),
+		   timer = setInterval(() => {
+			current += increment;
+			obj.textContent = current;
+			if (current == end) {
+			 clearInterval(timer);
+			}
+		   }, step);
+		 }
+		 counter("count1", 0, 100,  90000);
+		 counter("count2", 0, 500,  90000);
+		 counter("count3", 0, 1000, 80500);
+		 counter("count4", 990, 3000, 80500);
+		});
+		
 		</script>
 		
 </body>

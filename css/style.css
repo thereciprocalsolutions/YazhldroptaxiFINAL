@@ -241,11 +241,11 @@ html {
 
 .stfl{
     
-  position:fixed;
+  position:inherit;
   right:0px;
   left:0px; 
   bottom:580px; 
-  padding:10px;
+  padding:0px;
   z-index:50;
    animation: colorRotate 2.5s linear 0s infinite;
 }

@@ -250,7 +250,7 @@ input[type=submit] {
 						<p class="section-heading-3">Have a smooth and safe ride with our healthy and expert drivers. Book the Cab right now!</p>
 						<div class="margin-bottom-30"></div>
 						<div class="alert">Your message has been sent</div>
-						<form action="#" class="form-contact" id="bookingForm" data-toggle="validator" novalidate="true">
+						<!--form action="#" class="form-contact" id="bookingForm" data-toggle="validator" novalidate="true">
 							<div class="form-group">
 								<input type="text" class="form-control" id="name" placeholder="Name" required="">
 								<div class="help-block with-errors"></div>
@@ -299,7 +299,129 @@ input[type=submit] {
 								<div id="success"></div>
 								<button  type="submit" onclick="testVariable()" class="btn btn-primary">Find Car</button>
 							</div>
-						</form>
+						</form-->
+						<form action="#" class="advance-search-query input-night-rider yellow-theme"  id="bookingForm" >
+								<div class="regular-search"> 
+
+								    <div class="">
+									<div class="clearfix"></div><!-- /.clearfix -->
+
+						    <div class="col-md-4">
+							<label style="color: white;">Pick up location</label>
+							<div class="form-group">
+							    <!--i class="fa fa-clock-o"></i-->
+							    <input type="text" id="location-1" name="origin" class="form-control"  placeholder="Pickup Location" required> 
+							</div><!--/.input-->
+						    </div><!--/.col-md-4-->
+						    <div class="col-md-4">
+							<label style="color: white;">Drop location</label>
+							<div class="form-group">
+							    <!--i class="fa fa-calendar"></i-->
+							    <input type="text" id="location-2" name="destination"  required class="form-control" placeholder="Drop Location">
+
+							    </div> <center>  
+								<button class="btn btn-success" type="button" onclick="calcRoute();">Check Price</button>
+							    </center> <!--/.input-->
+						    </div><!--/.col-md-4-->
+						    <div class="clearfix"></div><!-- /.clearfix -->
+
+						    <div class="">
+
+
+
+
+
+						    <div id="ma" style="display: none;">  
+							<br><br>                              
+
+							<b> <div id="output" class="result-table"></div></b>
+							<div class="container-map" id="google-map"></div> 
+					<br><br>
+						       <div class="col-md-6" required>
+							<div class="service-thumbnail d-flex flex-fill">
+							<img src="https://a1droptaxi.com/img/etios.png" alt="#" style="height: 130px; width: 130px; ">
+							<div id="output1" class="meta-item">
+						    </div>
+						</div>
+					    </div>
+
+							 <div class="col-md-6">
+							<div class="service-thumbnail d-flex flex-fill">
+							<img src="https://a1droptaxi.com/img/crysta.png" alt="#" style="height: 130px; width: 130px; ">
+							<div id="output2" class="meta-item">
+						    </div>
+						</div>
+					    </div>
+
+
+
+							<div class="col-md-6">
+							<div class="service-thumbnail d-flex flex-fill">
+							<img src="https://a1droptaxi.com/img/traveller.png" alt="#" style="height: 130px; width: 130px; ">
+							<div id="output3" class="meta-item">
+						    </div>
+						</div>
+					    </div>
+						</div> 
+
+							<div class="col-md-4">
+							    <label style="color: white;">Name</label>
+							    <div class="form-group">
+								<!--i class="fa fa-map-marker"></i-->
+								<input type="text" placeholder="Your Name" class="form-control" id="name">
+							    </div><!--/.input-->
+							</div><!--/.col-md-4-->
+
+						    <div class="col-md-4">
+							    <label style="color: white;">Phone Number</label>
+							<div class="form-group">
+								<!--i class="fa fa-calendar"></i-->
+								<input type="tel" placeholder="Phone Number" class="form-control" placeholder="Your Number"id="p" pattern="[6-9]{1}[0-9]{9}" title="Enter Valid Phone Number">          
+							</div><!--/.col-md-4-->
+						    </div>
+						    <div class="col-md-4">
+							<label style="color: white;">Car Type</label>
+							<div class="form-group">
+							    <select id="cars" name="cars" class="form-control">
+								<option value="Sedan">Sedan</option>
+								<option value="SUV">SUV</option>
+								<option value="Traveller">Traveller</option>
+							      </select>
+							</div><!--/.input-->
+						    </div>
+						    <div class="col-md-4">
+							<label style="color: white;">Service Type</label>
+							<div class="form-group">
+							    <select id="ser" name="ser" class="form-control">
+								<option value="One-Way">One-Way</option>
+								<option value="Round">Round</option>
+
+							      </select>
+							</div><!--/.input-->
+						    </div>
+
+						    <div class="clearfix"></div><!-- /.clearfix -->
+						    <div class="col-md-4">
+							<label style="color: white;">Pick up Date</label>
+							<div class="form-group">
+							    <!--i class="fa fa-map-marker"></i-->
+							    <input type="date" required placeholder="01/01/2020"  id="pickupdate" class="form-control">
+							</div><!--/.input-->
+						    </div><!--/.col-md-4-->
+						    <div class="col-md-4">
+							<label style="color: white;">Pick up Time</label>
+							<div class="form-group">
+							    <!--i class="fa fa-map-marker"></i-->
+							    <input type="time" required placeholder="9:00AM"  id="pickuptime" class="form-control"> 
+							</div><!--/.input-->
+
+						    </div>
+
+					    <center>  
+						<input type="submit" class="btn btn-success" id="ma1"  value="Find car"  onclick="testVariable()">
+					    </center> 
+
+					</form>
 					
 				</div>
 

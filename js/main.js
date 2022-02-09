@@ -54,9 +54,12 @@ function calcRoute() {
          var n1=0;
             var n2=0;
            if(n<130)
-            {n1=130;}
+            {n1=130;
+            n2=250;
+            }
             else if(n<250)
-            {n2=250;}
+            {n1=n;
+                n2=250;}
             else{
                 n1=n;
                 n2=n;

@@ -49,24 +49,9 @@ function calcRoute() {
             sedanr=2*((n*11)+350)+" - "+2*((n*11)+300);
             suvo=((n*18)+350)+" - "+((n*18)+300);
             suvr=2*((n*15)+350)+" - "+2*((n*15)+300);
-            traveller=(2*((n*20)+350))+" - "+(2*((n*20)+300));*/
-          /* 
-          var n1=0;
-            var n2=0;
-           if(n<130)
-            {n1=130;}
-            else if(n<250)
-            {n2=250;}
-            else{
-                n1=n;
-                n2=n;
-            }
-            console.log(n);
-            sedano=((n1*13)+350)+" - "+((n1*13)+300);
-            sedanr=2*((n2*11)+350)+" - "+2*((n2*11)+300);
-            suvo=((n1*18)+350)+" - "+((n1*18)+300);
-            suvr=2*((n2*15)+350)+" - "+2*((n2*15)+300);
-            traveller=(2*((n2*20)+350))+" - "+(2*((n2*20)+300));*/
+            traveller=(2*((n*20)+350))+" - "+(2*((n*20)+300));
+         
+         
            
           //  $("#output").html("<div class='result-table'> Driving distance: " + result.routes[0].legs[0].distance.text + ".<br />SUV Rate: ₹" +((n)*12)+"-"+((n)*15)+".<br />Sedan Rate: ₹" +((n)*8)+"-"+((n)*11)+".<br />Hatchback Rate: ₹" +((n)*16)+"-"+((n)*19)+ ".<br />Duration: " + result.routes[0].legs[0].duration.text + ".</div>");
             //document.getElementById("output").style.display = "block";

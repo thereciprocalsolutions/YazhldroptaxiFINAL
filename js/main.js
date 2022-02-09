@@ -43,15 +43,17 @@ function calcRoute() {
 
             //Get distance and time            
             var d=result.routes[0].legs[0].distance.value/1000;
-            var n1=0;
-            var n2=0;
+            
             var n = d.toFixed(0);
-          /*  sedano=((n*13)+350)+" - "+((n*13)+300);
+            sedano=((n*13)+350)+" - "+((n*13)+300);
             sedanr=2*((n*11)+350)+" - "+2*((n*11)+300);
             suvo=((n*18)+350)+" - "+((n*18)+300);
             suvr=2*((n*15)+350)+" - "+2*((n*15)+300);
             traveller=(2*((n*20)+350))+" - "+(2*((n*20)+300));*/
-            if(n<130)
+          /* 
+          var n1=0;
+            var n2=0;
+           if(n<130)
             {n1=130;}
             else if(n<250)
             {n2=250;}
